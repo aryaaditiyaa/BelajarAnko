@@ -1,0 +1,61 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@drawable/logo_pi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"/>
+
+    <ScrollView
+            android:layout_below="@id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/btnPindah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="PINDAH"/>
+            <Button
+                    android:layout_below="@id/btnPindah"
+                    android:id="@+id/btnToast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="TOAST"/>
+            <Button
+                    android:layout_below="@id/btnToast"
+                    android:id="@+id/btnSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="SMS"/>
+            <Button
+                    android:layout_below="@id/btnSMS"
+                    android:id="@+id/btnEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="EMAIL"/>
+            <Button
+                    android:layout_below="@id/btnEmail"
+                    android:id="@+id/btnAlert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="ALERT"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
